@@ -2,58 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Festival de Música - EcoSonidos</title>
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class="relative">
-        <div class="bg-emerald-900 pt-6">
-            <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
 
-                <div class="flex items-center flex-1">
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
 
-                    <div class="flex items-center justify-between w-full md:w-auto">
-                        <a href="#">
-                            <span class="sr-only">Workflow</span>
-                            <h1 class="h-8 w-auto sm:h-10 text-xl text-slate-200">EcoSonidos</h1>
-                        </a>
-
-                        <div class="-mr-2 flex items-center md:hidden">
-                            <button type="button" class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">
-                              <span class="sr-only">Open main menu</span>
-                              <!-- Heroicon name: outline/menu -->
-                              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                              </svg>
-                            </button>
-                          </div>
-                    </div>
-
-                    <div class="hidden space-x-8 md:flex md:ml-10 text-slate-200">
-                        <a href="#" class="text-base font-medium hover:text-gray-300">Catálogo</a>
-          
-                        <a href="#" class="text-base font-medium hover:text-gray-300">¿Quiénes somos?</a>
-          
-                        <a href="#" class="text-base font-medium hover:text-gray-300">Contacto</a>
-          
-                      </div>
-
-                </div>
-
-                <div class="hidden md:flex md:items-center md:space-x-6">
-                    <a href="#" class="text-base font-medium text-white hiver:text-emerald-300">Comprar Boletos</a>
-                </div>
-
+            <nav class="navegacion-principal">
+                <a  href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </div>
     </header>
 
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM Festival</h2>
+                <p>Julio 2022, Armenia, Quindío.</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+    
     <section class="contenedor sobre-festival">
         <div class="imagen">
             <picture>
-                <source srcset="assets/img/imagen_vocalista.webp" type="image/webp">
-                <img loading="lazy" width="200" height="300" src="assets/img/imagen_vocalista.jpg" alt="imagen vocalista">
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="imagen vocalista">
             </picture>
         </div>
         <div class="contenido-festival">
@@ -226,5 +217,8 @@
     <footer class="site-footer">
         <p>Rock & EDM Festival. Todos los derechos reservados</p>
     </footer>
+
+
+    <script src="build/js/app.js"></script>
 </body>
 </html>
